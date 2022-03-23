@@ -118,6 +118,9 @@ body {
 
 .img-background--impostor_factory {
      background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://github.com/timeivan/web-design/blob/main/impostor_factory.jpg');
+background-size: cover;
+     background-repeat: no-repeat;
+     color: #000000;
 }
 
 .theme-darkviolet {
