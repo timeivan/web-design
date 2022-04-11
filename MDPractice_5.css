@@ -1,0 +1,130 @@
+* {
+     box-sizing: border-box;
+}
+
+body {
+     background: #1c1e22;
+     color: #fff;
+}
+
+.support-warning {
+     background: #ccb11c;
+     color: #000;
+     display: block;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 700;
+     opacity: 0.95;
+     padding: 3rem;
+     position: fixed;
+     text-align: center;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 5;
+}
+
+.support-warning a {
+     color: inherit;
+}
+
+.l-grid {
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.l-grid > .l-grid__item {
+     flex: 1 0 auto;
+}
+
+.l-grid--4x4 > .l-grid__item {
+     width: 25%;
+}
+
+@supports(display: grid) {
+     .support-warning {
+          display: none;
+     }
+	 
+.l-grid--4x4 > .l-grid__item {
+         width: auto;
+     }
+     
+     .l-grid {
+          display: grid;
+     }
+}
+
+.l-grid--4x4 {
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: repeat(3, minmax(13rem, 1fr));
+}
+
+.l-span-column-2 {
+     grid-column-start: span 2;
+}
+
+.l-span-row-2 {
+     grid-row-start: span 2;
+}
+
+.l-full-height {
+     min-height: 100vh;
+}
+
+.align-center {
+     align-items: center;
+     justify-content: center;
+}
+
+.content {
+     padding: 3.5rem;
+     max-width: 400px;
+}
+
+.heading {
+     font-family: 'Times New Roman', serif;
+     font-size: 1.5rem;
+     font-weight: 700;
+     line-height: 1.2;
+     margin-bottom: 1rem;
+}
+
+.description {
+     font-family: 'Arial', sans-serif;
+     font-size: 1rem;
+     line-height: 1.5;
+}
+
+.theme-pink {
+   background: #ffc0cb;
+   color: #ffffff;
+}
+
+.img-background {
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     color: #fff;
+}
+
+.img-background--pions1 {
+     background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://bipbap.ru/wp-content/uploads/2021/10/1618429342_4-oir_mobi-p-samie-krasivie-pioni-tsveti-krasivo-foto-4.jpg');
+}
+
+.img-background--pions2 {
+     background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://www.neizvestniy-geniy.ru/images/works/photo/2016/05/1613404_1.jpg');
+}
+
+.img-background--pions3 {
+     background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://attuale.ru/wp-content/uploads/2018/03/a71d8ce2f27d127010922d7d41d840fa_jpg_crop1498021603_ejw_1280.jpg');
+}
+
+.theme-hotpink {
+   background: #ff69b4;
+   color: #ffffff;
+}
+
+.theme-deeppink {
+   background: #ff1493;
+   color: #ffffff;	 
+}
